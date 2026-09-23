@@ -23,8 +23,7 @@ For at least 4 of my 5 test questions, the retrieved chunks include one that
 contains the answer.
 
 **Why this target:**
-<!-- e.g. "One of my questions is about a topic only two documents mention, so
-     I expect that one to be hard." -->
+Some questions only have 1 document that references the answer.
 
 ---
 
@@ -33,8 +32,7 @@ contains the answer.
 Every answer the system produces names at least one source document.
 
 **Why this target:**
-<!-- Why all five and not four? What about your setup makes that achievable —
-     or what would have to go wrong for it not to be? -->
+Each answer can be shown in the document without interpretation.
 
 ---
 
@@ -55,7 +53,8 @@ in at least 4 of 5 tries.
 
 ---
 
-## 4. Something about your chunks
+## 4. The chunks should not be verbose.
+Each chunk should not contain not be more than 200 characters.
 
 <!-- YOU WRITE THIS ONE.
 
@@ -72,12 +71,13 @@ in at least 4 of 5 tries.
 
 
 **Why this target:**
-
+Each question should produce a short answer so the chunk shouldn't produce a long answer.
 
 
 ---
 
-## 5. Your choice
+## 5. Every source should contain the answer.
+Each chunk should have sources that produce the answer even if the answer is wrong.
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -90,7 +90,7 @@ in at least 4 of 5 tries.
 
 
 **Why this target:**
-
+Even if the answer is wrong, the source should show progress towards the answer
 
 
 ---
