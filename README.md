@@ -114,6 +114,9 @@ I picked the campus life corpus and asked questions about the campus life which 
      Milestone 3. -->
 Each document in the corpus for campus life has the answer within 150 characters even if the sentence is cut off.
 
+Will change to 200 characters to handle longer responses.
+
+
 ## Sample Chunks
 
 <!-- Five chunks, pasted as text. Label each one and name the file it came from
@@ -172,14 +175,16 @@ Laundry costs $1.50 wash, $1.25 d
      visible. Milestone 4. -->
 
 **Question:**
-
+What happens when you upgrade the meal plan tier?
 **Answer:**
+When you upgrade your meal plan tier, you are billed immediately (admin_meal_plan_changes.txt).
 
+Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_kestrel_commons_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt
 ```
 ```
 
 **My relevance cutoff:**
-
+.45
 <!-- The number you set in config.py, and how you got there.
 
      You ran five questions your corpus covers and the five in OUT_OF_SCOPE
@@ -188,10 +193,40 @@ Laundry costs $1.50 wash, $1.25 d
      here — the table below wants all ten rows.
 
      Milestone 4. -->
+```
+What happens when you upgrade the meal plan tier?
+  run 1: —  (best distance 0.249)
+  run 2: —  (best distance 0.249)
+  run 3: —  (best distance 0.249)
 
-| Question | In corpus? | Best distance |
-|---|---|---|
-|  |  |  |
+What advice doyou have for history 118
+  run 1: —  (best distance 0.497)
+  run 2: —  (best distance 0.497)
+  run 3: —  (best distance 0.497)
+
+When are walk-in hours for the health centre?
+  run 1: —  (best distance 0.194)
+  run 2: —  (best distance 0.194)
+  run 3: —  (best distance 0.194)
+
+How do I ride the shuttle bus for free?
+  run 1: —  (best distance 0.634)
+  run 2: —  (best distance 0.634)
+  run 3: —  (best distance 0.634)
+
+Which of the dining halls has no waiting queue in the morning?
+  run 1: —  (best distance 0.312)
+  run 2: —  (best distance 0.312)
+  run 3: —  (best distance 0.312)
+
+Out-of-scope questions (the gate should refuse these):
+  refused  (best distance 0.825)  What is the capital of Mongolia?
+  refused  (best distance 0.934)  How do I change the oil in a diesel engine?
+  refused  (best distance 0.886)  Who won the 1994 World Cup?
+  refused  (best distance 0.844)  What is the recommended dosage of ibuprofen for a headache?
+  refused  (best distance 0.896)  How do I write a for loop in Rust?
+  -> gate refused 5 of 5
+```
 
 ## How I Used AI
 
