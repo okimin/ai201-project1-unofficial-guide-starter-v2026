@@ -91,7 +91,7 @@ without reading what came before or after?
 # Unit 1
 
 ## What This Does
-
+I picked the campus life corpus and asked questions about the campus life which the system should provide answers.
 <!-- Three or four sentences. Which corpus you picked, and the kinds of
      questions your system answers. Write it for someone who has never seen
      this repo.
@@ -100,8 +100,8 @@ without reading what came before or after?
 
 ## Chunking Strategy
 
-**Chunk size:**
-**Overlap:**
+**Chunk size:** 150
+**Overlap:** 75
 
 <!-- What about YOUR documents made you pick these numbers? Short posts and
      long sectioned guides don't want the same chunking, and "800 seemed
@@ -112,6 +112,7 @@ without reading what came before or after?
      more than pretending you got it right first time.
 
      Milestone 3. -->
+Each document in the corpus for campus life has the answer within 150 characters even if the sentence is cut off.
 
 ## Sample Chunks
 
@@ -124,29 +125,45 @@ without reading what came before or after?
 
      Milestone 3. -->
 
-**Chunk 1** — source: `` — produced by: ``
-
 ```
-```
+======================================================================
+Chunk 1  |  source: admin_add_drop_deadline.txt#0  |  produced by: chunker.py::fallback_split
+======================================================================
+On the add/drop deadline
 
-**Chunk 2** — source: `` — produced by: ``
+You can add a course through the end of the second week. Dropping is a longer window — through the end of week six — but a drop after week two shows
 
-```
-```
+======================================================================
+Chunk 2  |  source: course_cs_210.txt#0  |  produced by: chunker.py::fallback_split
+======================================================================
+CS 210 Data Structures
 
-**Chunk 3** — source: `` — produced by: ``
+I'm a junior and I've done this twice now. Format is lecture with weekly labs; slides go up after class, not before. Assessment: two midterms and a fin
 
-```
-```
+======================================================================
+Chunk 3  |  source: course_phys_130.txt#2  |  produced by: chunker.py::fallback_split
+======================================================================
+he lowest midterm is dropped.
 
-**Chunk 4** — source: `` — produced by: ``
+Expect 7 hours a week, plus 3 on lab weeks.
 
-```
-```
+The one piece of advice: the lab practical is worth 20% and almost nobody prepares for it.
 
-**Chunk 5** — source: `` — produced by: ``
+======================================================================
+Chunk 4  |  source: dining_the_ridgeway_cafe_followup.txt#0  |  produced by: chunker.py::fallback_split
+======================================================================
+Re: The Ridgeway Café
 
-```
+Adding to what people have said about The Ridgeway Café. The wait figure of 10 to 15 minutes at 12:30 matches what I've seen. If you're trying to eat be
+
+======================================================================
+Chunk 5  |  source: housing_morrow_house.txt#2  |  produced by: chunker.py::fallback_split
+======================================================================
+about $900 a year, and the singles are real singles.
+
+The bad: known damp problem on the ground floor; two rooms were taken offline in 2024.
+
+Laundry costs $1.50 wash, $1.25 d
 ```
 
 ## Sample Answer
