@@ -240,8 +240,9 @@ Out-of-scope questions (the gate should refuse these):
      Milestone 5. -->
 
 **1.**
-
+Asked Claude to help understand the chunking strategy. Helped classified what happens when I increase/decrease the chunking size  or overlap.
 **2.**
+Asked Claude how to run multiple of the questions which it directed me to run_eval.py. With that, I was able to get the output I desired with the questions I asked and the out of scope questions.
 
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
