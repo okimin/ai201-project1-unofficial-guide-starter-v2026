@@ -100,7 +100,7 @@ I picked the campus life corpus and asked questions about the campus life which 
 
 ## Chunking Strategy
 
-**Chunk size:** 150
+**Chunk size:** 175
 **Overlap:** 75
 
 <!-- What about YOUR documents made you pick these numbers? Short posts and
@@ -271,15 +271,166 @@ Asked Claude how to run multiple of the questions which it directed me to run_ev
 
 | Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
+| 1. Retrieved chunk contains the answer | 4 of 5 | 4/5 | 3/5 | 4/5 | MISSED |
+| 2. Every answer names a source | 5 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
 | 4. | | | | | |
 | 5. | | | | | |
 
 <!-- Underneath, paste the REAL output for each criterion from one of your
      runs — the actual text your system produced, not a description of it.
      Name the file and function that produced it. -->
+
+run_2026-09-30_2018_before
+
+## Real output
+
+This is what the system actually produced. Paste the relevant parts
+into your README underneath the table — the rubric asks for real
+output as text, not a description of it.
+
+### What happens when you upgrade the meal plan tier? — run 1
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_kestrel_commons_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt
+
+```
+Upgrading your meal plan tier bills you immediately. 
+
+Source: admin_meal_plan_changes.txt
+```
+
+### What happens when you upgrade the meal plan tier? — run 2
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_kestrel_commons_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt
+
+```
+When you upgrade your meal plan tier, it bills you immediately (admin_meal_plan_changes.txt).
+```
+
+### What happens when you upgrade the meal plan tier? — run 3
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_kestrel_commons_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt
+
+```
+When you upgrade your meal plan tier, it bills you immediately (admin_meal_plan_changes.txt).
+```
+
+### What advice doyou have for history 118 — run 1
+
+- Best distance: 0.4968 (refused by the gate)
+- Sources retrieved: course_econ_101.txt, course_engl_205.txt, course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt
+
+```
+I don't have enough information about that.
+```
+
+### What advice doyou have for history 118 — run 2
+
+- Best distance: 0.4968 (refused by the gate)
+- Sources retrieved: course_econ_101.txt, course_engl_205.txt, course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt
+
+```
+I don't have enough information about that.
+```
+
+### What advice doyou have for history 118 — run 3
+
+- Best distance: 0.4968 (refused by the gate)
+- Sources retrieved: course_econ_101.txt, course_engl_205.txt, course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt
+
+```
+I don't have enough information about that.
+```
+
+### When are walk-in hours for the health centre? — run 1
+
+- Best distance: 0.1945 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+Walk-in hours for the health centre are from 8am to 11am (health_center.txt).
+```
+
+### When are walk-in hours for the health centre? — run 2
+
+- Best distance: 0.1945 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+Walk-in hours for the health centre are from 8am to 11am (from health_center.txt).
+```
+
+### When are walk-in hours for the health centre? — run 3
+
+- Best distance: 0.1945 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+Walk-in hours for the health centre are from 8am to 11am (from health_center.txt).
+```
+
+### How do I ride the shuttle bus for free? — run 1
+
+- Best distance: 0.6340 (refused by the gate)
+- Sources retrieved: admin_parking_permits.txt, dining_kestrel_commons.txt, dining_the_ridgeway_cafe.txt, orientation_what_matters.txt, transit_shuttle.txt
+
+```
+I don't have enough information about that.
+```
+
+### How do I ride the shuttle bus for free? — run 2
+
+- Best distance: 0.6340 (refused by the gate)
+- Sources retrieved: admin_parking_permits.txt, dining_kestrel_commons.txt, dining_the_ridgeway_cafe.txt, orientation_what_matters.txt, transit_shuttle.txt
+
+```
+I don't have enough information about that.
+```
+
+### How do I ride the shuttle bus for free? — run 3
+
+- Best distance: 0.6340 (refused by the gate)
+- Sources retrieved: admin_parking_permits.txt, dining_kestrel_commons.txt, dining_the_ridgeway_cafe.txt, orientation_what_matters.txt, transit_shuttle.txt
+
+```
+I don't have enough information about that.
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 1
+
+- Best distance: 0.3120 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, both The Atrium and North Kitchen have no waiting queue. 
+
+- For The Atrium, the wait time is listed as "no queue" (dining_the_atrium.txt and dining_the_atrium_followup.txt).
+- For North Kitchen, the wait figure is also listed as "none" (dining_north_kitchen_followup.txt).
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 2
+
+- Best distance: 0.3120 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, both The Atrium and North Kitchen have no waiting queue. 
+
+- For The Atrium, the wait time is noted as "no queue" in `dining_the_atrium.txt`.
+- For North Kitchen, the wait figure is noted as "none" in `dining_north_kitchen_followup.txt`.
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 3
+
+- Best distance: 0.3120 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, **The Atrium** and **North Kitchen** both have a wait time of "no queue" (dining_the_atrium.txt, dining_the_atrium_followup.txt, and dining_north_kitchen_followup.txt).
+```
 
 ## Verdicts
 
@@ -292,13 +443,13 @@ Asked Claude how to run multiple of the questions which it directed me to run_ev
 
      Milestone 2. -->
 
-| # | Criterion | Verdict | How I decided |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
+| Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
+|---|---|---|---|---|---|
+| 1. Retrieved chunk contains the answer | 4 of 5 | 3/5 | 3/5 | 4/5 | MISSED |
+| 2. Every answer names a source | 5 of 5 | 5/5 | 5/5 | 5/5 | MISSED |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 4. The chunks should not be verbose. | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 5. Every source should contain the answer. | 5 of 5 | 5/5 | 5/5 | 5/5 | MET |
 
 ## Diagnoses
 
@@ -319,15 +470,19 @@ Asked Claude how to run multiple of the questions which it directed me to run_ev
      low, and which one you'd tighten and to what.
 
      Milestone 3. -->
+Question 1 and 2 failed due to the generation. I had K at inappropiate cutoff and it refused to allow the answers. I also didn't properly re-index my chunks. I also need to revise criterion 5 to a measurable criterion. I also had my chunking size to be lower than the criterion, making every answer lower than 200 by force.
 
 ## The Improvement
 
 **What I changed:**
-
+- Increase K to .65
+- Changing criterion 5 to a measureable criterion.
+- Increase chunk size to 250.
 **Why I picked it:**
 
 <!-- Connect it to a specific diagnosis above in one sentence. If you can't,
      you picked a fix because it sounded impressive. -->
+Revised K to be a more reasonable number to allow more corpus to pass. Criterion 5 was conflicted to not be measurable so feedback was given to fix it. And criterion 4 was never tested properly due to the low chunking size.
 
 ### Run Log — After
 

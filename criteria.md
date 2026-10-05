@@ -92,6 +92,11 @@ Each chunk should have sources that produce the answer even if the answer is wro
 **Why this target:**
 Even if the answer is wrong, the source should show progress towards the answer
 
+**Revised in Unit 2**
+Every source that was mentioned in an answer should contain the fact in any way.
+
+**Why Revised in Unit 2**
+The criterion was too vague and all answers retrieves from sources anyway. But making it so that we check the facts in the sources that were mentioned, we can now measure sucess of the criterion.
 
 ---
 
