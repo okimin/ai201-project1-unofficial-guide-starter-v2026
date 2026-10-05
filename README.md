@@ -489,13 +489,178 @@ Revised K to be a more reasonable number to allow more corpus to pass. Criterion
 <!-- Same format, same five criteria, three runs each.
      `python run_eval.py --label after` -->
 
+## Real output
+
+This is what the system actually produced. Paste the relevant parts
+into your README underneath the table — the rubric asks for real
+output as text, not a description of it.
+
+### What happens when you upgrade the meal plan tier? — run 1
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_pellew_dining_hall.txt, dining_pellew_dining_hall_followup.txt, dining_the_atrium.txt
+
+```
+When you upgrade your meal plan tier, it bills you immediately. 
+
+Source: admin_meal_plan_changes.txt
+```
+
+### What happens when you upgrade the meal plan tier? — run 2
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_pellew_dining_hall.txt, dining_pellew_dining_hall_followup.txt, dining_the_atrium.txt
+
+```
+When you upgrade your meal plan tier, it bills you immediately. 
+
+Source: `admin_meal_plan_changes.txt`
+```
+
+### What happens when you upgrade the meal plan tier? — run 3
+
+- Best distance: 0.2487 (passed the gate)
+- Sources retrieved: admin_dining_dollars.txt, admin_meal_plan_changes.txt, dining_pellew_dining_hall.txt, dining_pellew_dining_hall_followup.txt, dining_the_atrium.txt
+
+```
+When you upgrade your meal plan tier, it bills you immediately. 
+
+Source: admin_meal_plan_changes.txt
+```
+
+### What advice doyou have for history 118 — run 1
+
+- Best distance: 0.5070 (passed the gate)
+- Sources retrieved: course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt, orientation_what_matters.txt
+
+```
+Based on the provided documents, the advice for HIST 118 includes:
+* Take the course description "with a grain of salt" if the student transferred in last year (course_hist_118.txt).
+* Read the essay rubric early, as it is posted in week 2 and followed exactly (course_hist_118_exams.txt and course_hist_118.txt).
+* Expect a heavy workload of reading, about 120 pages a week, which is front-loaded so that the first month is heavier than the rest (course_hist_118.txt and course_hist_118_workload.txt).
+```
+
+### What advice doyou have for history 118 — run 2
+
+- Best distance: 0.5070 (passed the gate)
+- Sources retrieved: course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt, orientation_what_matters.txt
+
+```
+Based on the provided documents, advice for HIST 118 includes taking the course details with a grain of salt if transferred recently, expecting a lot of reading (about 120 pages a week, which is front-loaded with the first month being heavier), and reading the essay rubric early when it is posted in week 2 because it is followed exactly. 
+
+Sources: 
+- `course_hist_118.txt`
+- `course_hist_118_exams.txt`
+- `course_hist_118_workload.txt`
+```
+
+### What advice doyou have for history 118 — run 3
+
+- Best distance: 0.5070 (passed the gate)
+- Sources retrieved: course_hist_118.txt, course_hist_118_exams.txt, course_hist_118_workload.txt, orientation_what_matters.txt
+
+```
+Based on the provided documents, the advice for HIST 118 includes:
+* Take the course description with a grain of salt if you transferred in last year, and expect a lot of reading (about 120 pages a week, which is real time). (Source: `course_hist_118.txt`)
+* Read the essay rubric early, as it is posted in week 2 and followed exactly. (Source: `course_hist_118_exams.txt`, `course_hist_118.txt`)
+* Be aware that the workload is front-loaded, meaning the first month is heavier than the rest. (Source: `course_hist_118_workload.txt`)
+```
+
+### When are walk-in hours for the health centre? — run 1
+
+- Best distance: 0.1747 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_pellew_dining_hall_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+The walk-in hours for the health centre are from 8am to 11am (health_center.txt).
+```
+
+### When are walk-in hours for the health centre? — run 2
+
+- Best distance: 0.1747 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_pellew_dining_hall_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+Walk-in hours for the health centre are from 8am to 11am (health_center.txt).
+```
+
+### When are walk-in hours for the health centre? — run 3
+
+- Best distance: 0.1747 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_pellew_dining_hall_followup.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+```
+Walk-in hours for the health centre are from 8am to 11am (health_center.txt).
+```
+
+### How do I ride the shuttle bus for free? — run 1
+
+- Best distance: 0.5880 (passed the gate)
+- Sources retrieved: dining_kestrel_commons.txt, orientation_what_matters.txt, transit_shuttle.txt, transit_walking.txt
+
+```
+You can ride the shuttle bus for free by showing your student ID (transit_shuttle.txt).
+```
+
+### How do I ride the shuttle bus for free? — run 2
+
+- Best distance: 0.5880 (passed the gate)
+- Sources retrieved: dining_kestrel_commons.txt, orientation_what_matters.txt, transit_shuttle.txt, transit_walking.txt
+
+```
+You can ride the shuttle bus for free by showing your student ID (transit_shuttle.txt).
+```
+
+### How do I ride the shuttle bus for free? — run 3
+
+- Best distance: 0.5880 (passed the gate)
+- Sources retrieved: dining_kestrel_commons.txt, orientation_what_matters.txt, transit_shuttle.txt, transit_walking.txt
+
+```
+You can ride the shuttle bus for free by showing your student ID (transit_shuttle.txt).
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 1
+
+- Best distance: 0.3290 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, North Kitchen has a wait figure of none. 
+
+Source: dining_north_kitchen_followup.txt
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 2
+
+- Best distance: 0.3290 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, North Kitchen has a wait figure of none. 
+
+Source: dining_north_kitchen_followup.txt
+```
+
+### Which of the dining halls has no waiting queue in the morning? — run 3
+
+- Best distance: 0.3290 (passed the gate)
+- Sources retrieved: dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_the_atrium_followup.txt, dining_verrill_street_grill.txt, dining_verrill_street_grill_followup.txt
+
+```
+Based on the provided documents, North Kitchen has a wait figure of none. 
+
+Source: dining_north_kitchen_followup.txt
+```
+
+
 | Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
-| 4. | | | | | |
-| 5. | | | | | |
+| 1. Retrieved chunk contains the answer | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 2. Every answer names a source | 5 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
+| 4. The chunks should not be verbose. | 4 of 5 | 4/5 | 4/5 | 4/5 | MET |
+| 5. Every source that was mentioned in an answer should contain the fact in any way. | 5 of 5 | 5/5 | 5/5 | 5/5 | MET |
 
 **Did it help?**
 
@@ -506,6 +671,7 @@ Revised K to be a more reasonable number to allow more corpus to pass. Criterion
 
      Milestone 4. -->
 
+Reindexing and changing the chunking strategy made the first criterion make it's target. Interestingly, the 4th criterion lowered but still meet its target because Question 3 is more than 200 characters. And criterion 5 is more than answered.
 ## What's Still Broken
 
 <!-- For each criterion still missed after your fix: what you'd do about it,
@@ -522,3 +688,4 @@ Revised K to be a more reasonable number to allow more corpus to pass. Criterion
      differently, and why?
 
      Milestone 5. -->
+I am glad that I did revise criteria 5 to be more measurable and I want to be better at writing my own criteria like that and four.
